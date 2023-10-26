@@ -10,8 +10,30 @@
             </head>
             <body>
                 <ul class="menu">
-                    <div class="toggle"></div>
+                    <div class="hover"></div>
                 </ul>
+                <script>
+                    let menuHover = document.querySelector('.hover');
+                    let menu = document.querySelector('.menu');
+                    
+                    menuHover.onmouseover = function () {
+                        menu.classList.toggle('open');
+                        menuHover.classList.toggle('open');
+                    }
+                </script>
                 
-            </body>
+                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                <!-- VIDEO -->
+                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- FOR CAMERA -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- GALLARY -->
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/live-photo.css' rel='stylesheet'>
+<!--live event  -->
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/poll.css' rel='stylesheet'>
+<!-- poll -->
+                            </body>
             </html>

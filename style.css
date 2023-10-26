@@ -1,0 +1,54 @@
+{
+    margin: 0; 
+     /*reset margin  */
+     padding:0;
+     /* reset padding */
+     box-sizing: border-box;
+}
+body 
+{
+    display: flex;
+    justify-content: center;
+    /* align them on centre */
+    align-items: center;
+    min-height: 100vh;
+    background-color: #bcb1b1;
+    /* optionL */
+}
+.menu
+{
+    position: relative;
+    width:300px;
+    height: auto;
+    display: flex; 
+    /* display flex is for   */
+    justify-content: center;
+    /* align them on centre */
+    align-items: center;
+
+}
+.menu .hover
+{
+    position: absolute;
+    width: 334px;
+    height: 334px;
+    flex-shrink: 0;
+    border: 3px solid #7F1DFE;
+    background-color: #fff;
+    /* transition: 0.5s; */
+    border-radius: 50%;   
+    box-shadow: 0px 4px 20px 0px rgba(190, 148, 243, 0.20);
+    transition: 0.5s;
+
+
+}
+.menu .hover:hover {
+    width: 744px;
+    height: 744px;
+    border-radius: 744px;
+    border: 1px solid var(--Border, #FFF);
+    background: var(--Glass, linear-gradient(91deg, rgba(255, 255, 255, 0.80) 8.9%, rgba(255, 255, 255, 0.70) 53.28%, rgba(255, 255, 255, 0.50) 95.33%));
+    backdrop-filter: blur(15px);
+}
+
+/* for cicle inside  */
