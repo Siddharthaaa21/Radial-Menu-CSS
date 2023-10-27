@@ -39,7 +39,7 @@ body
     transition: 0.5s;
 
 }
-.menu .hover.open:hover {
+.menu .hover.active:hover {
     width: 744px;
     height: 744px;
     border-radius: 744px;
@@ -48,8 +48,97 @@ body
     backdrop-filter: blur(15px);
     /*  now to add the center of the circle #fff will use  
      */
-     
 }
+
+.menu li {
+    position: absolute;
+    list-style: none;
+    left: 50px; 
+    list-style: none;
+    transform: rotate(calc(360deg/6*var(--i)));
+    translateX(50px);
+    transform-origin: 360px; 
+    visibility: hidden;
+    opacity: 0; 
+    z-index: 20;
+    left: -200px;
+    display: flex;
+width: 64px;
+height: 64px;
+padding: 5.333px 5.333px 8px 8px;
+border-radius: 50%;
+flex-shrink: 0;
+
+
+ }
+ .menu li.poll {
+     /* Ensure it's relatively positioned */
+     display: flex;
+     width: 64px;
+     height: 64px;
+     justify-content: center;
+     align-items: center;
+     flex-shrink: 0;
+        border-radius: 50%;
+       /* Position it at the right */
+    /* transform: translate(50%, -50%); */
+    }
+
+
+.menu.active li {
+    visibility: visible;
+    opacity: 1;
+}
+.menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+height: 64px;
+    font-size: 1.75em;
+    color: black;
+    border-radius: 50%;
+
+    /* background: white ; */
+
+}
+.menu.open li.active{
+    transalteX(50px);
+
+    .indicator {
+        width: 334px;
+        height: 334px;
+        flex-shrink: 0;
+        border: 3px solid #7F1DFE;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0px 4px 20px 0px rgba(190, 148, 243, 0.20);
+        transition: 0.5s;
+        position: relative; /* Add this */
+    
+    }
+    
+    .indicator::before {
+        content: "";
+        position: absolute; /* Position this element relative to the main indicator */
+        width: 334px; /* Adjust this for the indicator size */
+        height: 334px; /* Adjust this for the indicator size */
+        background: #222237;
+        border-radius: 50%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    
+    .menu.active .indicator::before {
+        opacity: 1;
+        top: -5px; /* Adjust this value to position it as needed */
+        left: -5px; /* Adjust this value to position it as needed */
+        background: #2c2e2c;
+        box-shadow: 0 0 6px #29fd53;
+    }
+    
+
+
 /*  need to add 
 1 labels
 2 icons
