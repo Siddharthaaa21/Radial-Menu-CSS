@@ -8,24 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <ul class="menu">
-        <div class="hover"><ion-icons name ="add-outline"></ion-icons></div><ul>
-
-            <li style="--i:0;" class="active"><a href="#"><ion-icon name="videocam-outline"></ion-icon></a></li>
-            <!-- video -->
-            <li style="--i:1;"><a href="#"><ion-icon name="images-outline"></ion-icon></a></li>
-            <!-- gallery -->
-            <li style="--i:2;" class ="poll"><a href="#"></a><i class="gg-poll"></i></ion-icon></a></li>
-            <!-- poll -->
-            <li style="--i:3;"><a href="#"><i class="gg-live-photo"></i></ion-icon></a></li>
-            <!-- live event -->
-            <li style="--i:4;"><a href="#"><ion-icon name="camera-outline"></ion-icon></a></li>
-            <li style="--i:5;">
-                <a href="#">  <ion-icon name="reels"> </ion-icon><img src="assets/images/reels.png" alt="reels" style="width: 25px; height: 25px;"></a></li>
-            <div class="indicator"></div>                
-            </ul>
-                                  
+    <body>
+        <div class="hover" id="hover">
+            <i class="icons"></i>
+           
+        </div>
+        <div class="menu" id="menu">
+            <a href="#"><ion-icon name="camera-outline"></ion-icon></a>
+            <a href="#"><ion-icon name="videocam-outline" class="video"></ion-icon></a>
+            <a href="#"><ion-icon name="images-outline" class="gallery"></ion-icon></a>
+            <a href="#"><ion-icon name="poll-outline"></ion-icon><img src="/assets/images/icons8-live-photos-100.png"></a>
+            <a href="#"><ion-icon name="live-photo-outline"></ion-icon><img src="/assets/images/icons8-poll-vertical-96.png"></a>
+            <a href="#"><ion-icon name="reels-outline"></ion-icon><img src="assets/images/reels.png" alt="reels" style="width: 65px; height: 65px;"></a>
+            
     <script>
         let menuHover = document.querySelector('.hover');
         let menu = document.querySelector('.menu');
@@ -47,12 +42,10 @@ listItems.forEach(item => item.addEventListener('click', activateLink));
     
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/poll.css' rel='stylesheet'>
+   
     <!-- VIDEO -->
     
-<link href='https://unpkg.com/css.gg@2.0.0/icons/css/live-photo.css' rel='stylesheet'>
 <!--live event  -->
-<link href='https://unpkg.com/css.gg@2.0.0/icons/css/poll.css' rel='stylesheet'>
 <!-- poll -->
                 </body>
 </html>
